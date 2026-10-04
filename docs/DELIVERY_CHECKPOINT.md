@@ -10,7 +10,7 @@ Update organisation profile/governance, pipeline/adapters/source research, and t
 
 ## Delivery model
 
-Use task branches and granular fork commits with `Open AI agent:` message prefix. Deliver one consolidated single-commit upstream PR per repository. PRs contain an AI role prefix, concise change summary and observed validation; upstream PRs need no issue links. Do not merge PRs automatically.
+Use task branches and granular fork commits with `Open AI agent:` message prefix. Deliver one consolidated single-commit PR per repository targeting its fmarslan fork main branch. PRs contain an AI role prefix, concise change summary and observed validation; PRs need no issue links. The owner explicitly authorised reviewed fork PRs to be merged. Do not create YouthOpp upstream PRs.
 
 ## Recovery procedure
 
@@ -26,15 +26,15 @@ Organisation mission, community policies, AI governance and product contract hav
 
 The coordinator reports three active integrated feeds and 89 researched source candidates spanning the EU's 27 member countries and the USA. Candidate coverage does not mean all candidates have proven recent activity, safe automated access or implemented adapters. Country-level quality verification remains in progress. The RSS adapter's destination countries, eligible countries and deadlines remain unknown; richer targeting cannot be claimed.
 
-Fork work and concrete consolidated delivery branches have been prepared remotely by the coordinator. Upstream PR creation returned `403 — Resource not accessible by integration`, including the organisation repository. Prepared branches are not opened PRs or merged changes. The epic must remain open while delivery, research verification or rollout checks remain incomplete.
+Fork work and concrete consolidated delivery branches have been prepared remotely by the coordinator. Earlier upstream PR creation returned `403 — Resource not accessible by integration`. The owner has since removed upstream delivery from scope: development, issues, PRs, merges and operations now target the fmarslan forks. Upstream permissions are no longer a delivery blocker. Prepared branches alone are not evidence of completed merge or deployment. The epic must remain open while delivery, research verification or rollout checks remain incomplete.
 
 ## Exact next actions
 
 1. Complete per-country source verification and record evidence or explicit gaps in the source register.
-2. Enable the connected GitHub application's **Pull requests: write** access for the YouthOpp repositories, or use the prepared fork compare links to open the upstream PRs through an authorised account. Do not rebuild duplicate branches before checking current state.
-3. Inspect the remote delivery branches, confirm one commit per upstream PR, and rerun changed-file validation if additional research is integrated.
-4. After maintainer review and merge, configure Actions publication permissions and GitHub Pages deployment, run collection to produce the durable catalog release, and confirm the website retrieves that release and publishes correctly.
+2. Inspect fork PRs and prepared branches; create or update consolidated PRs against the corresponding fmarslan fork main branch. Do not rebuild duplicate branches before checking current state.
+3. Inspect the remote delivery branches, confirm one commit per fork delivery PR, and rerun changed-file validation if additional research is integrated.
+4. Review checks and merge the owner-authorised fork PRs, then configure fork Actions publication permissions and GitHub Pages deployment, run collection to produce the durable catalog release, and confirm the website retrieves that release and publishes correctly.
 5. Supply optional Google/Bing verification and analytics configuration only from owner-controlled accounts; absent values remain disabled.
 6. Record hosted smoke-test evidence before declaring rollout complete. Disable the recovery reminder only after the agreed work has actually completed.
 
-Central fork issues are available; use them for roles whose other fork issue features remain disabled. This checkpoint records blockers honestly and does not assert that upstream delivery or production deployment succeeded.
+Central fork issues are available; use them for roles whose other fork issue features remain disabled. This checkpoint records blockers honestly and does not assert that fork merges or production deployment succeeded.

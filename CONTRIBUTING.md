@@ -6,7 +6,7 @@ Help young people spend less time searching and more time understanding their op
 
 Check the relevant repository for an existing task before opening one. Explain the problem, affected users, evidence and a clear acceptance criterion. Where issues are disabled, use the checked-in task register until a maintainer enables issues. Do not invent issue identifiers or claim a task has been posted when it has not.
 
-Use a feature branch. Keep changes scoped, include relevant tests and explain what you verified. Maintainers review changes before merge. Development history can contain task commits; the current delivery policy consolidates each repository's upstream delivery into one commit.
+Use a feature branch. Keep changes scoped, include relevant tests and explain what you verified. Maintainers review changes before merge. Development history can contain task commits; the current delivery policy consolidates each repository's release into one commit and merges the reviewed PR into that owner's fork main branch. Current work remains in the fmarslan forks; no YouthOpp upstream PR is requested.
 
 ## Propose a source
 
