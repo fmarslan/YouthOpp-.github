@@ -1,57 +1,27 @@
-README
+# YouthOpp
 
-####
+**More opportunity. Less searching.**
 
-About the Organization
+YouthOpp is an open-source, nonprofit-purpose opportunity index for young people, university students and recent graduates. We bring scattered scholarships, internships, learning programmes and early-career opportunities into a clear catalog, with short summaries and links to original publishers.
 
-This project is developed under a GitHub Organization structure. Instead of progressing through a single personal repository, we chose an organization based setup to keep the project clean, scalable, and closer to real world development practices. Repositories are created under this organization and each one is responsible for a specific part of the project (such as frontend, documentation, or shared assets). This approach makes collaboration easier and keeps responsibilities clearly separated.
+## Discover at the source
 
-#####
+Find an opportunity, understand the available information, and continue at its original source. We do not handle applications or guarantee eligibility, funding, selection or employment. Publisher information is authoritative; availability and requirements can change.
 
-About the Project
+Our interface and project documentation are in English. Source summaries may remain in their original language. Unknown details are marked as unknown rather than guessed.
 
-This repository hosts a static web application that is published using GitHub Pages. The goal of the project is straightforward: build a simple, fast, and maintainable static website without adding unnecessary complexity.
+## Build something useful together
 
-####
+Students and new graduates can contribute source research, adapters, documentation, design, accessibility improvements and tests. This is a practical place to build AI experience and a public record of work while helping others discover opportunities. Contributions may support a portfolio; they do not guarantee a scholarship, internship or job.
 
-Project Scope
+YouthOpp is conceived as an AI-led project: AI agents develop, coordinate and review its implementation, with transparent attribution and human maintainer stewardship. People set priorities and remain accountable for what is published. Read our [AI governance policy](https://github.com/fmarslan/YouthOpp-.github/blob/main/docs/AI_GOVERNANCE.md).
 
-The project includes:
-Development of a static web application.
-Hosting and deployment via GitHub Pages
-Version control through GitHub Organization repositories
-A basic deployment flow where updates are reflected automatically after commits
+## Explore the project
 
-####
+- [Opportunity catalog project](https://github.com/fmarslan/YouthOpp-youthopp.github.io) — the repository deployment environment records the live Pages URL.
+- [Website and public documentation](https://github.com/fmarslan/YouthOpp-youthopp.github.io)
+- [Source adapters and data pipeline](https://github.com/fmarslan/YouthOpp-data-pipeline)
+- [Contribution guide](https://github.com/fmarslan/YouthOpp-.github/blob/main/CONTRIBUTING.md)
+- [Community conduct](https://github.com/fmarslan/YouthOpp-.github/blob/main/CODE_OF_CONDUCT.md)
 
-Roadmap
-
-Technology Selection
-Development Environment
-Repository Structure
-
-####
-
-Deployment (GitHub Pages)
-
-Deployment is handled directly through GitHub Pages;
-
-Changes are pushed to repository
-GitHub Pages is enabled from the repository settings
-The main or docs branch is selected as the source
-Each commit automatically updates the live site
-
-####
-
-Technologies Used
-----------
-----------
-----------
-----------
-----------
-
-####
-
-Final Notes
-
-
+We welcome publishers, educators and community organisations who want to improve coverage or suggest corrections. Being listed does not imply partnership or endorsement. YouthOpp's nonprofit purpose is a project commitment, not a claim of registered charitable status.
