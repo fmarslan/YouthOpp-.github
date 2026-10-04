@@ -20,8 +20,21 @@ Use task branches and granular fork commits with `Open AI agent:` message prefix
 4. Run relevant validation and independent QA, fix findings, then assemble delivery branches.
 5. Post final evidence and disable the recovery reminder when all agreed deliverables are complete.
 
-## Product Owner checkpoint
+## Product Owner checkpoint — 2026-10-04
 
-Branch: `task/product-governance`. Organisation profile, contribution policy, community conduct, AI governance and product contract drafted. Internal-link and whitespace checks are required before committing. A successful local commit is not evidence of a published upstream change.
+Organisation mission, community policies, AI governance and product contract have local task commits. Seven internal links and whitespace checks passed. The website includes public governance, mission/product, accessibility and data-quality docs. Five website tests and a 20-record static build passed; QA additionally inspected desktop/mobile Chromium rendering and JavaScript-disabled routes. Consult issue comments for later evidence rather than treating this snapshot as a live status feed.
 
-Issues were initially disabled on forks; central organisation fork issues subsequently became available. Continue using central fork issues for roles whose repository issue feature remains disabled.
+The coordinator reports three active integrated feeds and 89 researched source candidates spanning the EU's 27 member countries and the USA. Candidate coverage does not mean all candidates have proven recent activity, safe automated access or implemented adapters. Country-level quality verification remains in progress. The RSS adapter's destination countries, eligible countries and deadlines remain unknown; richer targeting cannot be claimed.
+
+Fork work and concrete consolidated delivery branches have been prepared remotely by the coordinator. Upstream PR creation returned `403 — Resource not accessible by integration`, including the organisation repository. Prepared branches are not opened PRs or merged changes. The epic must remain open while delivery, research verification or rollout checks remain incomplete.
+
+## Exact next actions
+
+1. Complete per-country source verification and record evidence or explicit gaps in the source register.
+2. Enable the connected GitHub application's **Pull requests: write** access for the YouthOpp repositories, or use the prepared fork compare links to open the upstream PRs through an authorised account. Do not rebuild duplicate branches before checking current state.
+3. Inspect the remote delivery branches, confirm one commit per upstream PR, and rerun changed-file validation if additional research is integrated.
+4. After maintainer review and merge, configure Actions publication permissions and GitHub Pages deployment, run collection to produce the durable catalog release, and confirm the website retrieves that release and publishes correctly.
+5. Supply optional Google/Bing verification and analytics configuration only from owner-controlled accounts; absent values remain disabled.
+6. Record hosted smoke-test evidence before declaring rollout complete. Disable the recovery reminder only after the agreed work has actually completed.
+
+Central fork issues are available; use them for roles whose other fork issue features remain disabled. This checkpoint records blockers honestly and does not assert that upstream delivery or production deployment succeeded.
