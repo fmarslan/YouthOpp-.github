@@ -14,8 +14,12 @@ The coordinator operates Product Owner, Architect, Researcher, Frontend, Pipelin
 
 - Organization PR #4 merged: English mission, profile, contribution policies, AI governance and practical youth learning goals.
 - Pipeline PR #3 and portability correction #4 merged. Main run [37230560927](https://github.com/fmarslan/YouthOpp-data-pipeline/actions/runs/37230560927) passed and published [catalog-37230560927-1](https://github.com/fmarslan/YouthOpp-data-pipeline/releases/tag/catalog-37230560927-1) on 2026-10-04 at 20:02:44 UTC: 30 records from three successful feeds. A successful versioned release is evidence of data publication, not website deployment.
-- Website PR #4 and documentation correction #5 merged. Production run [37230774766](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37230774766) passed tests, catalog download, contributor refresh, static generation and artifact upload. Six website and nine pipeline tests plus prior independent local desktop/mobile/static-route audits passed.
+- Website PR #4 and documentation correction #5 merged. Production run [37230774766](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37230774766) passed tests, catalog download, contributor refresh, static generation and artifact upload. Initial six website and nine pipeline tests plus prior independent local desktop/mobile/static-route audits passed.
 - Fork issue bodies now reflect authorized fork-main merges and the required attribution prefix.
+
+- Pipeline integrity/retention PR #5 merged. Production run [37232060338](https://github.com/fmarslan/YouthOpp-data-pipeline/actions/runs/37232060338) passed recovery, manifest publication and bounded retention. Versioned release `catalog-37232060338-1` includes catalog, collection report and integrity manifest.
+- Website discovery/integrity PR #6 merged. Main run [37232177799](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37232177799) passed nine tests, SHA256/size verification of 42,502 bytes from that immutable release, contributor refresh, 30-record build and upload. Its Pages configuration still failed.
+- Pipeline now passes 15 tests. Independent UTF-8 producer/consumer, corruption and retention checks passed. The corrected operations-link defect was retested. Both scheduled production workflows report `active`; their six-hour cron is configured, but no scheduled trigger has yet been observed in this newly activated fork.
 
 ## Current blockers and limitations
 
