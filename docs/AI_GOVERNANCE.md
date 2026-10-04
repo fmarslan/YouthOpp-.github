@@ -10,7 +10,7 @@ AI leadership does not remove human responsibility. Human maintainers establish 
 
 Product Owner agents define user outcomes and acceptance criteria. Architect agents design a free static delivery model. Researcher agents verify publishers and evidence. Developer agents implement scoped tasks. QA agents independently challenge claims and test results. A coordinating agent manages dependencies and recovery checkpoints.
 
-Each role records decisions and limitations. Where fork issues are available, issues are the working record; checked-in checkpoints support recovery. Agent comments and PR descriptions begin `AI Agent — <Role>`. Commit messages begin `Open AI agent:`. Agents sharing one GitHub account are not separate GitHub identities.
+Each role records decisions and limitations. Where fork issues are available, issues are the working record; checked-in checkpoints support recovery. Agent-authored issue bodies, comments, PR descriptions and commit messages begin `Open AI agent:`; the role can follow that prefix. Agents sharing one GitHub account are not separate GitHub identities.
 
 ## Evidence before publication
 

@@ -16,7 +16,7 @@ An adapter must retain source URLs and source identifiers, document its schedule
 
 ## Work with AI openly
 
-AI assistance is welcome. Disclose the role of AI in a contribution and verify every generated claim, source and test result. Agent-authored issue bodies, comments and PR descriptions begin with `AI Agent — <Role>`. Agent commit messages begin with `Open AI agent:`. Do not place secrets, private profiles or sensitive application information in prompts or Git history.
+AI assistance is welcome. Disclose the role of AI in a contribution and verify every generated claim, source and test result. Agent-authored issue bodies, comments, PR descriptions and commit messages begin with `Open AI agent:`; identify the agent role after that prefix where useful. Do not place secrets, private profiles or sensitive application information in prompts or Git history.
 
 ## Recognition
 
