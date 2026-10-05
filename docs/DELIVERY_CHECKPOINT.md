@@ -1,54 +1,34 @@
 # Delivery checkpoint
 
-Open AI agent: Coordinator — verified recovery snapshot, 2026-10-05 04:33 UTC.
-
-Read the current [fork delivery epic #2](https://github.com/fmarslan/YouthOpp-.github/issues/2), task issues, PRs and Actions before acting. This is a dated recovery record; live GitHub state is authoritative.
+Open AI agent: Coordinator — recovery snapshot, 2026-10-05. Live fork state is authoritative; read current issues, PRs and Actions before acting.
 
 ## Authorized scope
 
-Work only in `fmarslan/YouthOpp-.github`, `fmarslan/YouthOpp-data-pipeline` and `fmarslan/YouthOpp-youthopp.github.io`. Never send YouthOpp upstream PRs. The owner authorized branches, task commits, reviewed single-commit PRs into fork main and their merge. New agent comments, PRs and commit messages start `Open AI agent:`.
+Work only in `fmarslan/YouthOpp-.github`, `fmarslan/YouthOpp-data-pipeline` and `fmarslan/YouthOpp-youthopp.github.io`; never send upstream PRs. The owner authorized branches, per-task commits, reviewed consolidated single-commit PRs into fork main and merge. Comments, PRs and commits begin `Open AI agent:`. Coordinate Product Owner, Architect, Researcher, Frontend, Pipeline and independent QA. Browser permission already granted; no desktop work.
 
-The owner explicitly approved cloud-browser Pages activation. No desktop action is authorized or required.
+## Completed stages
 
-## Completed and merged
+Organization PRs #4–#8 deliver English nonprofit-purpose mission/profile, AI governance, youth learning goals, contribution policies and checkpoints. Legal nonprofit status or publisher endorsement is not claimed.
 
-- Organization PRs #4–#7: English nonprofit-purpose mission/profile, contribution policies, AI governance, youth learning goals and delivery evidence.
-- Pipeline PRs #3–#8: durable collection, runner portability, immutable manifests, bounded retention, 110-source evidence, reviewed Czech metadata and the final US/BG/CY evidence reconciliation.
-- Website PRs #4–#9: English static catalog, category/country pagination, source attribution/health, contributor scoring, all public Docs, accessibility/discovery metadata, programme labels and byte-identical final research evidence.
-- Completed task issues: organization architecture #1, pipeline research #1, pipeline implementation #2 and website contributor history #1. Delivery epic #2 and website delivery/hosted QA #2–#3 remain open.
+Pipeline PRs #3–#11 deliver durable collection, immutable integrity manifests, bounded retention, source research, reviewed Czech and NASA metadata, and canonical source/category/record-kind taxonomy. Main `d14163603288cabe40b90d728623364441e36dfa` passes 36 tests. Website PRs #4–#13 deliver English compact directory, static category/country pagination, source attribution/health, contributors, Docs, accessibility and discovery metadata. PR #13 is merged at `d51e75bb598d55bd50d20783d9c9ef617a77c5b5`: canonical record-kind actions and source/model Docs are verified by 17 tests for both project-path and root hosting. Main run [37269252581](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37269252581) succeeded after merge.
 
-[Pipeline main run 37263518031](https://github.com/fmarslan/YouthOpp-data-pipeline/actions/runs/37263518031) passed validation/tests, prior-state restore, collection, versioned manifest publication and retention. [Release catalog-37263518031-1](https://github.com/fmarslan/YouthOpp-data-pipeline/releases/tag/catalog-37263518031-1) contains 32 records from four healthy sources. Two Czech records are reviewed programme/institutional metadata; application availability remains unknown.
+The compact interface separates source capability from record classification. Explicit adapter IDs join research to runtime health. Multi-category memberships preserve one canonical record. Search applies only to the current page, as disclosed. Publisher geography does not imply host country or eligibility; missing values remain unknown.
 
-[Website PR #9 CI 37263837162](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37263837162) passed. [Website main run 37263870473](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37263870473) passed 12 tests, versioned release download, contributor refresh, 32-record production build and Pages artifact upload. Deployment failed at Configure GitHub Pages; Deploy GitHub Pages was skipped. Successful build/upload is not live deployment.
+## Measured production evidence
 
-Independent QA reproduced 19/19 pipeline tests and 12/12 website tests, verified the release asset digest, 75 generated HTML routes, metadata/internal links and desktop/mobile checks. No Pages-independent code defect is currently known.
+First actual producer `schedule` run [37269037131](https://github.com/fmarslan/YouthOpp-data-pipeline/actions/runs/37269037131), created 2026-10-05 05:43:24 UTC, completed successfully. [Release catalog-37269037131-1](https://github.com/fmarslan/YouthOpp-data-pipeline/releases/tag/catalog-37269037131-1) contains 35 records from five integrated sources: OFY 12, OD 10, SC 10, Czech 2 and NASA 1. Catalog is 317,664 bytes, SHA256 `cf843cce251101d4fee45fb85061074994e705c08fd7ab2af2603913d9c459c1`.
 
-## Exact hosted blocker
+Four source collections are healthy. The Czech fetch failed transiently in that run; its two previously reviewed records were retained, last successful collection 05:38:25 UTC. Failure is visible in collection health. Programme/institutional records do not establish open youth applications or infer deadlines/eligibility.
 
-Repository API reports `has_pages:false`. GitHub Pages must be enabled with **GitHub Actions** as the publishing source in the [fork Pages settings](https://github.com/fmarslan/YouthOpp-youthopp.github.io/settings/pages). The connector has no Pages/administration write operation. `actions/configure-pages` cannot self-enable Pages with the normal `GITHUB_TOKEN`; doing so requires a separate owner/admin token, which the project does not request or store.
+Website main run [37267728235](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37267728235) deployed successfully. Pages is enabled; earlier disabled/authentication blockers are superseded. Actual public acceptance remains incomplete: prior direct HTTP checks found the project URL redirecting to `https://fmarslan.com/YouthOpp-youthopp.github.io/` and returning 404. Fresh run probes received 403 in the restricted execution network, which is inconclusive about origin availability. Do not change the personal website or DNS without specific authorization. Subdomain/custom-domain configuration remains an owner decision.
 
-The approved cloud browser now reaches GitHub, but its session is signed out. GitHub presents username/password, Google, Apple and passkey methods; secure policy requires the owner to choose and complete authentication. No credentials were requested in chat and no login method was selected on the owner's behalf.
+Owner-private [test Site](https://youthopp-test.fmarslan.chatgpt.site) version 4 is successfully deployed from exact pushed source `e6e727ecf3bb1493b84565b4d3f67e1a3408b329`, with reviewed merged website code, the digest-verified 35-record scheduled release, full contributors and source/model Docs. Native deployment `appgdep_6ac33a6e8b188191a1269cf98f5b021e` succeeded at 2026-10-05 05:49:52 UTC. Fresh authenticated version 4 live HTTP QA returned 200 for all eight checked routes: root, opportunities, sources, Docs, contributors, data-model Docs, access-review Docs and sitemap. A private test Site does not satisfy public Pages acceptance.
 
-Fresh QA found the GitHub project URL redirecting to `https://fmarslan.com/YouthOpp-youthopp.github.io/`, where root, opportunities, Docs and contributors routes return 404. After Pages activation, verify the final custom-domain routing. If that is the intended public base, set `SITE_URL=https://fmarslan.com/YouthOpp-youthopp.github.io` before the final production build so canonical, sitemap, OpenGraph and JSON-LD use the final origin.
+## Remaining constraints and next actions
 
-## Research and operational constraints
-
-The register contains 110 candidates. All 28 target countries have at least three distinct publishers with recent editorial evidence, including closed annual programmes. This does not establish three currently open publishers or three automated/permission-reviewed adapters per country.
-
-After final reconciliation, 19 publishers across 17 countries have explicitly confirmed open evidence; no country has three. Only four sources are operational. Rights/access review remains pending for most candidates; ordinary RSS/robots access is not a reuse licence. The Czech metadata adapter publishes only original title/link/date for two exact reviewed URLs and does not infer deadline, destination or eligibility.
-
-The US Fulbright 2027/28 competition is recorded as open through 2026-10-06 17:00 ET, with earlier institutional deadlines possible. Time-limited state requires later maintenance.
-
-Both workflows contain active six-hour cron definitions: pipeline at minute 17 and website at minute 25 UTC. No `schedule` event has yet been observed. The current pipeline workflow entered main after the 00:17 window; the next expected window is 06:17 UTC, followed by the site at 06:25 UTC. Cron configuration or push success alone is not measured schedule execution.
-
-Optional Google/Bing verification and analytics remain disabled until owner-controlled identifiers are supplied.
-
-## Resume actions
-
-1. Inspect main, open PRs/issues, Actions and this checkpoint; do not duplicate completed work.
-2. Complete GitHub authentication in the approved cloud-browser handoff and enable Pages with GitHub Actions.
-3. Rerun/dispatch current website main; require a successful deploy job and actual environment URL.
-4. Confirm the final public base, then set `SITE_URL` only if needed and rerun.
-5. Independently verify live root/catalog/source/Docs/contributor/detail/pagination routes, assets, canonical/OG/JSON-LD/sitemap/robots/llms, mobile layout and keyboard behavior.
-6. Observe at least one real `schedule` run for pipeline and website. Keep scheduled-run absence separate from code failure.
-7. Close website QA/delivery and epic only after hosted acceptance. Disable the recovery reminder when live and scheduled acceptance are complete, or if the task is explicitly paused because owner authentication remains unavailable.
+- PR #13 has merged with passing CI and successful main deploy. Verify exact hosted consumption and routes.
+- The same owner-private test Site is refreshed and deployed, with eight hosted routes returning 200. Finish independent asset, record-kind, metadata and mobile/keyboard acceptance.
+- Observe a real website `schedule` event separately from successful push builds. Producer scheduled execution is verified.
+- Continue feasible permission/access-reviewed source work from current research state. The research register has 110 sources; the catalog embeds 111 registry rows, including one unmatched runtime aggregator; editorial publication evidence, confirmed-open calls and operational reviewed adapters are separate metrics. No country has three reviewed working adapters; document gaps without fabrication. IKY requires prior permission and remains disabled. NASA uses bounded factual programme metadata, not an inferred open call.
+- Optional Google/Bing verification and analytics remain disabled without owner-controlled identifiers.
+- Keep overall epic and hosted QA open until actual public/scheduled acceptance. Update this checkpoint after completed stages; disable recovery only after all feasible authorized work is complete or a non-transient owner action fully blocks it.
