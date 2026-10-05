@@ -1,40 +1,44 @@
 # Delivery checkpoint
 
-AI Agent — Product Owner
+Open AI agent: Coordinator — verified recovery snapshot, 2026-10-05.
 
-This document supports recovery for the initial AI-led YouthOpp delivery. The working epic is [delivery coordination issue](https://github.com/fmarslan/YouthOpp-.github/issues/2); the product task is [governance task](https://github.com/fmarslan/YouthOpp-.github/issues/3).
+Read the latest [fork delivery epic](https://github.com/fmarslan/YouthOpp-.github/issues/2), PRs, Actions and this file before resuming. Do not duplicate existing work.
 
-## Agreed scope
+## Authorized scope
 
-Update organisation profile/governance, pipeline/adapters/source research, and the English website/catalog/docs/contributors/SEO. Independent Product Owner, Architect, Researcher, Developer and QA roles are coordinated by the root agent. Evidence and limitations must remain public and truthful.
+Work only in `fmarslan/YouthOpp-.github`, `fmarslan/YouthOpp-data-pipeline` and `fmarslan/YouthOpp-youthopp.github.io`. Never send upstream PRs. The owner authorized branch work, task commits, reviewed single consolidated commit PRs into fork main and their merge. Comments, PRs and commit messages start `Open AI agent:`. Product, architecture, research, frontend, pipeline and independent QA roles are coordinated separately.
 
-## Delivery model
+The owner explicitly approved cloud-browser Pages activation with “Yes”. Approval is granted; the current blocker is tool availability. No desktop actions were performed.
 
-Use task branches and granular fork commits with `Open AI agent:` message prefix. Deliver one consolidated single-commit PR per repository targeting its fmarslan fork main branch. PRs contain an AI role prefix, concise change summary and observed validation; PRs need no issue links. The owner explicitly authorised reviewed fork PRs to be merged. Do not create YouthOpp upstream PRs.
+## Merged and verified
 
-## Recovery procedure
+- Organization PR #4: English nonprofit-purpose mission/profile, contribution policies, AI governance and practical youth learning goals.
+- Pipeline PRs #3–#7: durable collection, runner portability, immutable manifests, bounded release retention, source evidence and reviewed Czech programme metadata.
+- Website PRs #4–#8: English static catalog, category/country pagination, attribution, source health, contributor scoring, Docs, accessibility checks, SEO/social discovery and accurate programme/institutional-grant labels.
+- [Pipeline production run 37259905391](https://github.com/fmarslan/YouthOpp-data-pipeline/actions/runs/37259905391) succeeded on 2026-10-05, with 19 tests, prior-state restore, collection, manifest publication and retention. [Immutable release catalog-37259905391-1](https://github.com/fmarslan/YouthOpp-data-pipeline/releases/tag/catalog-37259905391-1) contains 32 records: 30 feed records and two reviewed Czech programme/institutional-grant metadata entries. Their application availability remains unknown.
+- Website PR #8 hosted CI passed. Independent local QA recorded 75 generated HTML routes without link/metadata failures and 18 desktop/mobile route checks without reported failures; 12 website tests passed.
+- [Website main run 37260144084](https://github.com/fmarslan/YouthOpp-youthopp.github.io/actions/runs/37260144084) passed tests, immutable release download, contributor refresh, production generation and artifact upload. Deployment failed at Configure GitHub Pages with `HttpError: Not Found`; deployment was skipped. A successful build is not a live rollout.
 
-1. Read the epic, task issues and current repository state.
-2. Inspect actual branches, commits and open PRs; do not assume prior work was pushed.
-3. Identify unfinished tasks and resume specialist agents without duplicating completed work.
-4. Run relevant validation and independent QA, fix findings, then assemble delivery branches.
-5. Post final evidence and disable the recovery reminder when all agreed deliverables are complete.
+## Exact remaining blocker
 
-## Product Owner checkpoint — 2026-10-04
+GitHub Pages publishing must be enabled with GitHub Actions as the source in the [fork Pages settings](https://github.com/fmarslan/YouthOpp-youthopp.github.io/settings/pages). The connector does not expose that settings write. Two approved cloud-browser requests timed out without returning usable UI state; no settings change was verified.
 
-Organisation mission, community policies, AI governance and product contract have local task commits. Seven internal links and whitespace checks passed. The website includes public governance, mission/product, accessibility and data-quality docs. Five website tests and a 20-record static build passed; QA additionally inspected desktop/mobile Chromium rendering and JavaScript-disabled routes. Consult issue comments for later evidence rather than treating this snapshot as a live status feed.
+A fresh HTTP probe at 2026-10-05 03:35 UTC found `https://fmarslan.github.io/YouthOpp-youthopp.github.io/` redirecting to `https://fmarslan.com/YouthOpp-youthopp.github.io/`, with final HTTP 404 and noindex. The owner's custom-domain routing needs verification after Pages activation. No working hosted catalog is claimed.
 
-The coordinator reports three active integrated feeds and 89 researched source candidates spanning the EU's 27 member countries and the USA. Candidate coverage does not mean all candidates have proven recent activity, safe automated access or implemented adapters. Country-level quality verification remains in progress. The RSS adapter's destination countries, eligible countries and deadlines remain unknown; richer targeting cannot be claimed.
+## Transparent constraints
 
-Fork work and concrete consolidated delivery branches have been prepared remotely by the coordinator. Earlier upstream PR creation returned `403 — Resource not accessible by integration`. The owner has since removed upstream delivery from scope: development, issues, PRs, merges and operations now target the fmarslan forks. Upstream permissions are no longer a delivery blocker. Prepared branches alone are not evidence of completed merge or deployment. The epic must remain open while delivery, research verification or rollout checks remain incomplete.
+The register has 110 candidates and 94 recent dated/cycle editorial evidence records, with at least three editorial publishers in all 28 target countries. Closed annual calls are included in that editorial metric. It does not establish three currently open calls or three reviewed automated integrations per country. All 28 countries retain the automated-coverage gap.
 
-## Exact next actions
+Czech metadata indexing uses two exact reviewed URLs, excludes article prose/images and preserves unknown deadline, destination and eligibility. Access-policy inspection is not an express reuse licence or publisher endorsement. NL/PT feed ingestion remains disabled because reviewed items did not provide qualifying calls. Further programme-page adapters need concrete relevance, access and technical review.
 
-1. Complete per-country source verification and record evidence or explicit gaps in the source register.
-2. Inspect fork PRs and prepared branches; create or update consolidated PRs against the corresponding fmarslan fork main branch. Do not rebuild duplicate branches before checking current state.
-3. Inspect the remote delivery branches, confirm one commit per fork delivery PR, and rerun changed-file validation if additional research is integrated.
-4. Review checks and merge the owner-authorised fork PRs, then configure fork Actions publication permissions and GitHub Pages deployment, run collection to produce the durable catalog release, and confirm the website retrieves that release and publishes correctly.
-5. Supply optional Google/Bing verification and analytics configuration only from owner-controlled accounts; absent values remain disabled.
-6. Record hosted smoke-test evidence before declaring rollout complete. Disable the recovery reminder only after the agreed work has actually completed.
+Optional Google/Bing verification and analytics remain disabled without owner-controlled identifiers. Six-hour collection and site cron definitions are active, but a scheduled event has not been independently observed. Passing push runs do not establish scheduler execution.
 
-Central fork issues are available; use them for roles whose other fork issue features remain disabled. This checkpoint records blockers honestly and does not assert that fork merges or production deployment succeeded.
+## Resume after Pages activation
+
+1. Inspect current main, PRs and Actions; no duplicate PRs.
+2. Enable Pages with GitHub Actions, rerun failed deployment, then inspect actual final host.
+3. Correct SITE_URL/canonical/sitemap/social origin if needed without changing unrelated account routing.
+4. Independently test hosted catalog, filters, pagination, Docs, sources, contributors, mobile/keyboard access and metadata.
+5. Record hosted evidence and close delivery/QA only after rollout acceptance. Research/access limitations remain explicit backlog.
+
+The continuation reminder was already disabled when inspected. This run did not re-enable it or create another automation. Remaining work is blocked on Pages settings access and final-host verification; completion is not claimed.
