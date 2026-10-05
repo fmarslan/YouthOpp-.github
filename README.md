@@ -1,6 +1,6 @@
 # YouthOpp community and governance
 
-This repository maintains the YouthOpp organisation profile and shared community policies. YouthOpp helps young people, university students and recent graduates discover opportunities through an open-source catalog that links to original publishers.
+[YouthOpp/.github](https://github.com/YouthOpp/.github) maintains the YouthOpp organisation profile and shared community policies. YouthOpp helps young people, university students and recent graduates discover opportunities through an open-source catalog that links to original publishers.
 
 ## Documents
 
@@ -11,4 +11,4 @@ This repository maintains the YouthOpp organisation profile and shared community
 - [Product contract](docs/PRODUCT_CONTRACT.md)
 - [Delivery checkpoint](docs/DELIVERY_CHECKPOINT.md)
 
-Public project documentation is published by the website repository. This repository provides the organisation-wide foundation; technical specifications belong alongside their implementation.
+Public project documentation is published by [YouthOpp/youthopp.github.io](https://github.com/YouthOpp/youthopp.github.io). Source adapters, collection workflows, registry and datasets belong to [YouthOpp/data-pipeline](https://github.com/YouthOpp/data-pipeline); the website consumes those outputs and presents them. This repository provides the organisation-wide foundation; technical specifications belong alongside their implementation.

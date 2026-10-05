@@ -4,6 +4,12 @@
 
 Young people, university students and recent graduates should discover relevant opportunities without repeatedly visiting fragmented publishers. YouthOpp presents compact summaries and original links. It also supports practical AI learning and visible open-source contributions.
 
+## Repository responsibilities
+
+[YouthOpp/data-pipeline](https://github.com/YouthOpp/data-pipeline) owns all source adapters, collection Actions and scripts, source registry, canonical data formats and published datasets. [YouthOpp/youthopp.github.io](https://github.com/YouthOpp/youthopp.github.io) downloads validated pipeline outputs and presents them as the catalog, source directory and public Docs. The website does not own collection adapters, a competing source registry or historical source datasets. Shared governance belongs to [YouthOpp/.github](https://github.com/YouthOpp/.github).
+
+Only actively used implementation files and valid data remain in each repository. Deletion requires checking runtime and build references; imported pipeline records must retain the agreed schema, taxonomy, original-source attribution and unknown-field semantics. Independent QA checks pipeline output against website consumption.
+
 ## Experience
 
 The site and project documents are English. Source titles and summaries may retain their original language with language metadata. Opportunity categories and destination-country catalogs are prebuilt, paginated static pages. Large datasets are not loaded into every browser.

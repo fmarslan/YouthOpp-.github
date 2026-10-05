@@ -6,7 +6,13 @@ Help young people spend less time searching and more time understanding their op
 
 Check the relevant repository for an existing task before opening one. Explain the problem, affected users, evidence and a clear acceptance criterion. Where issues are disabled, use the checked-in task register until a maintainer enables issues. Do not invent issue identifiers or claim a task has been posted when it has not.
 
-Use a feature branch. Keep changes scoped, include relevant tests and explain what you verified. Maintainers review changes before merge. Development history can contain task commits; the current delivery policy consolidates each repository's release into one commit and merges the reviewed PR into that owner's fork main branch. Current work remains in the fmarslan forks; no YouthOpp upstream PR is requested.
+Use a feature branch. Keep changes scoped, include relevant tests and explain what you verified. Maintainers review changes before merge. Development history can contain task commits; the current delivery policy consolidates each repository's release into one commit and merges the reviewed PR into its authorized development fork. Current delivery does not include upstream PRs; the operational repository allowlist is recorded in the delivery checkpoint.
+
+## Repository responsibilities
+
+Use [YouthOpp/data-pipeline](https://github.com/YouthOpp/data-pipeline) for adapters, data collection Actions and scripts, datasets, schema validation and the source registry. Use [YouthOpp/youthopp.github.io](https://github.com/YouthOpp/youthopp.github.io) for downloading validated pipeline outputs and presenting the catalog and public Docs. Shared policies and the organisation profile belong to [YouthOpp/.github](https://github.com/YouthOpp/.github).
+
+Remove obsolete files, scripts and datasets only after checking their imports, workflow invocations, runtime inputs and documented use. Keep active source records in the shared pipeline format; do not add independent website datasets or a second source registry.
 
 ## Propose a source
 
