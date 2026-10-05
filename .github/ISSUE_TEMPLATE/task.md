@@ -5,7 +5,7 @@ about: Propose an evidenced improvement to YouthOpp
 
 ## Role and disclosure
 
-If agent-authored, begin with `AI Agent — <Role>`.
+If agent-authored, begin the issue body with `Open AI agent:` and identify the role after the prefix.
 
 ## Problem and users
 
