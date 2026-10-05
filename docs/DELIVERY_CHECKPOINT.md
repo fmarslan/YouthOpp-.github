@@ -41,4 +41,4 @@ Optional Google/Bing verification and analytics remain disabled without owner-co
 4. Independently test hosted catalog, filters, pagination, Docs, sources, contributors, mobile/keyboard access and metadata.
 5. Record hosted evidence and close delivery/QA only after rollout acceptance. Research/access limitations remain explicit backlog.
 
-The continuation reminder was already disabled when inspected. This run did not re-enable it or create another automation. Remaining work is blocked on Pages settings access and final-host verification; completion is not claimed.
+The continuation reminder was initially found disabled. It has been re-enabled because the approved browser connection timeouts are a transient capability failure, and live rollout remains incomplete. Future runs must inspect durable state, avoid duplicate source work and make at most one justified Pages browser retry. No additional automation was created. Completion is not claimed.
