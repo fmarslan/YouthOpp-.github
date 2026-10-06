@@ -2,13 +2,13 @@
 
 **More opportunity. Less searching.**
 
-YouthOpp is an open-source, nonprofit-purpose opportunity index for young people, university students and recent graduates. We bring scattered scholarships, internships, learning programmes and early-career opportunities into a clear catalog, with short summaries and links to original publishers.
+YouthOpp is an open-source, nonprofit-purpose opportunity index for young people, university students and recent graduates. We bring scattered scholarships, internships, learning programmes and early-career opportunities into a clear catalog, with factual titles and links to original publishers.
 
 ## Discover at the source
 
 Find an opportunity, understand the available information, and continue at its original source. We do not handle applications or guarantee eligibility, funding, selection or employment. Publisher information is authoritative; availability and requirements can change.
 
-Our interface and project documentation are in English. Source summaries may remain in their original language. Unknown details are marked as unknown rather than guessed.
+Our interface and project documentation are in English. Indexed source titles may remain in their original language. Unknown details are marked as unknown rather than guessed.
 
 ## Build something useful together
 
@@ -18,7 +18,7 @@ YouthOpp is conceived as an AI-led project: AI agents develop, coordinate and re
 
 ## Explore the project
 
-- [Opportunity catalog project](https://github.com/YouthOpp/youthopp.github.io) — the deployment environment records any verified live URL.
+- [Planned public opportunity catalog](https://youthopps.org) — DNS, GitHub Pages binding, HTTPS and public behavior are pending verification.
 - [Website and public documentation](https://github.com/YouthOpp/youthopp.github.io)
 - [Source adapters and data pipeline](https://github.com/YouthOpp/data-pipeline)
 - [Contribution guide](https://github.com/YouthOpp/.github/blob/main/CONTRIBUTING.md)
