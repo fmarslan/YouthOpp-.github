@@ -1,0 +1,37 @@
+# Contributing to YouthOpp
+
+Help young people spend less time searching and more time understanding their opportunities. You can research a source, write an adapter, fix a link, improve accessibility, review a translation, document a decision or test a change. A first contribution can be small.
+
+## Start with a task
+
+Check the relevant repository for an existing task before opening one. Explain the problem, affected users, evidence and a clear acceptance criterion. Where issues are disabled, use the checked-in task register until a maintainer enables issues. Do not invent issue identifiers or claim a task has been posted when it has not.
+
+Use a feature branch. Keep changes scoped, include relevant tests and explain what you verified. Maintainers review changes before merge. Production changes are proposed to the original YouthOpp repositories through reviewed pull requests. During the current migration, consolidate each repository's delivery into one commit. Opening reviewed migration PRs is authorized; merging them requires separate maintainer action or authorization recorded in the delivery checkpoint.
+
+## Repository responsibilities
+
+Use [YouthOpp/data-pipeline](https://github.com/YouthOpp/data-pipeline) for adapters, data collection Actions and scripts, datasets, schema validation and the source registry. Use [YouthOpp/youthopp.github.io](https://github.com/YouthOpp/youthopp.github.io) for downloading validated pipeline outputs and presenting the catalog and [public Docs](https://youthopps.org/docs/). Shared policies and the organisation profile belong to [YouthOpp/.github](https://github.com/YouthOpp/.github). Production workflows, releases and cross-repository downloads must use these original repositories after their migration PRs are accepted.
+
+Remove obsolete files, scripts and datasets only after checking their imports, workflow invocations, runtime inputs and documented use. Keep active source records in the shared pipeline format; do not add independent website datasets or a second source registry.
+
+## Propose a source
+
+Include the publisher name, country, original URL, supported languages, opportunity types, recent-update evidence and proposed access method. Prefer original institutions and reliable catalogs. Check published access guidance and avoid authentication bypass, excessive requests or full-text republication without permission.
+
+An adapter must retain source URLs and source identifiers, document its schedule, use bounded network requests, and produce the shared schema. Use fixed fixtures for tests. Do not infer missing deadlines, funding, eligibility or locations. A failed source must not silently delete its last successful records.
+
+## Work with AI openly
+
+AI assistance is welcome. Disclose the role of AI in a contribution and verify every generated claim, source and test result. Agent-authored issue bodies, comments, PR descriptions and commit messages begin with `Open AI agent:`; identify the agent role after that prefix where useful. Do not place secrets, private profiles or sensitive application information in prompts or Git history.
+
+## Recognition
+
+The website may generate contributor profiles from public GitHub history. Scores represent documented project activity, not talent, reliability, eligibility or employment prospects. The published scoring method must state which repositories, revisions and activity types were included and which automated activity was excluded. Report attribution errors through a task or PR; do not manipulate activity to raise a score.
+
+## Before submitting
+
+- Check original-source attribution, dates and factual claims.
+- Test the affected behaviour and explain limitations honestly.
+- Check keyboard access, mobile layout and meaningful link text when changing UI.
+- Keep English project documentation clear; preserve source language metadata.
+- Follow the [code of conduct](CODE_OF_CONDUCT.md).
